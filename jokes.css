@@ -1,0 +1,86 @@
+@font-face {
+    font-family: mont;
+    src: url(FONTS/BeVietnamPro-Bold.ttf);
+}
+@font-face {
+    font-family: modern;
+    src: url(FONTS/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: kailsix;
+    src: url(FONTS/kailsix-regular.otf);
+}
+@font-face {
+    font-family: thunder;
+    src: url(FONTS/Thunder-BoldLC.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+.container{
+    min-height: 50vh;
+    width: 40vw;
+    position: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    background-color: black;
+    border-radius: 40px;
+}
+
+.head h1{
+    font-family: modern;
+    font-size: 6vh;
+    color: aliceblue;
+}
+
+.jokes{
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+    gap: 4vh;
+}
+
+.jokes h3{
+    color: aliceblue;
+    font-family: mont;
+}
+
+.btn button{
+    position: relative;
+    padding: 10px 25px 10px 25px;
+    background-color: yellow;
+    border: none;
+    border-radius: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+    font-family: modern;
+}
+
+@media screen and (max-width : 600px){
+    .container{
+        min-height: 60vh;
+        width: 70%;
+    }
+
+    .head h1{
+        font-size: 5vh;
+    }
+}
